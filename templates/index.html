@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age and Gender Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Team 533</a>
+    <nav class="nav-items">
+      <a href="/">Home</a>
+
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>Age and Gender Detection !!! </h1>
+      <p>Gender and Age Classification using OpenCV Deep Learning </p>
+      <p> <b>Opencv- </b>bIt is an Open Source Computer Vision Library which is mainly used for image processing, video capture and analysis including features like face detection and object detection.
+        <br><b>Caffemodel- </b> Caffe is a deep learning framework. To get a Caffe model you need to train the network. That prototxt file is only to deploy the model and cannot be used to train it.</p>
+
+        <h2> Upload your image here </h2>
+        <form action="/result" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Predict">
+    </form>
+    <a href="/realtime">Real-time</a>
+    </div>
+
+
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; SmartInternz Externship Project</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

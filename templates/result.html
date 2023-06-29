@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webcam Capture</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .result-image {
+      width: 300px; /* Set your desired width here */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Unique styles for the home link */
+    .home-link {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Unique styles for the result heading */
+    .result-heading {
+      color: green;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="intro">
+  <nav class="nav-items">
+    <a href="/" class="home-link">Home</a>
+  </nav>
+  <h1 class="result-heading">Result</h1>
+  {% if image_path %}
+  <img class="result-image" src="{{ image_path }}" alt="Result">
+  {% else %}
+  <p>No image uploaded</p>
+  {% endif %}
+  <br>
+  <a href="/index">Back to Upload</a>
+</div>
+  <footer class="footer">
+    <div class="copy">&copy; SmartInternz Externship Project</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
